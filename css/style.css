@@ -1,1 +1,81 @@
+.site-header { /* Header styles */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /*space between logo and navigation */
+    padding: 20px; /* Add padding around the header */
+    background-color:#DF3232
+} 
 
+
+
+.nav-links { /* Navigation links styles */
+    color:black; /* Set text color to white */
+    text-decoration: none; /* Remove underline from links */
+    display: flex; /* Use flexbox for layout */
+    gap: 20px; /* Space between navigation links */
+    margin: 10px 10px;
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    background-color: blueviolet;
+}
+
+.hero-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: 2fr 1fr; /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+    margin: 10px; /* Add margin around the grid */
+    background-color: blueviolet;
+    
+}
+.hero-banner{
+    background-color: #C3A0DF;
+    padding: 20px; /* Add padding around the banner */
+}
+
+
+.hero-sidebar {
+    background-color: #1FE661;
+    padding: 20px; /* Add padding around the sidebar */
+}
+
+.cards-gallery {
+    display:grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr)); /* auto size the number of columnns, where per item cannot go below 200 px ->  Responsive columns */
+    gap: 20px; /* Space between cards */
+    background-color: blueviolet;
+}
+
+.card{
+    background-color: #FFF600;
+    border-radius: 10px; /* Rounded corners for cards */
+    padding: 20px;
+}
+
+.site-footer {
+    background-color: #592C2C;
+    padding: 10px; /* Add padding around the footer */
+    text-align: center; /* Center the footer text */
+    margin-top: 10px; /* Add margin above the footer */
+}
+ 
+@media (min-width: 768px) {
+    
+    /* Desktop Flex Alignment Requirements */
+    .nav-links {
+        flex-direction: row; /* Switch navigation layout container to row */
+        justify-content: space-between;  
+    }
+
+    .card {
+        flex-basis: 30%; 
+        justify-content: space-between; 
+    }
+    .hero-grid {
+        flex-direction: row; /* Switch layout container to row */
+        align-items: stretch;
+    }
+
+   
+}
